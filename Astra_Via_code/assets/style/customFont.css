@@ -1,0 +1,158 @@
+
+/* Sommaire : Police et style 
+    1-Titre   (ligne 9-48)
+        h1, h2 ,h3
+    2-Paragraphe, lien bouton interactif   (ligne 49-73) 
+        p, a 
+    3-Cas spécifique   (ligne 74-159)
+*/
+/* 1 - Titre */
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+/*  1.1 - H1 */
+h1{
+    font-size: 34px;
+}
+@media screen and (min-width: 768px) {
+    h1{     
+        font-size: 54px;
+    }
+    .textHeroAccueil h1{
+        font-size: 64px;
+    }
+}
+/*  1.2 - H2 */
+h2{
+    font-size: 26px;
+}
+@media screen and (min-width: 768px) {
+    h2{       
+        font-size: 32px;
+    }
+}
+/*  1.3 - H3 */
+h3{
+    font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+    h3{       
+        font-size: 24px;
+    }
+}
+/* 2) Paragraphe, lien, bouton interactif */
+p, a{
+    font-family: 'Roboto', sans-serif;
+}
+/* 2 - Paragraphe */
+p{
+    color: #ffffff99;
+    font-size: 16px;
+    line-height: 2.2rem;  
+}
+@media screen and (min-width: 768px) {
+    p{
+        font-size: 18px;
+    }
+}
+/* 2 - Lien de navigation */
+a{  
+    text-transform: uppercase; 
+}
+header  .nav-link {
+    font-size: 16px;
+}
+.dropdown-item {
+    font-size: 14px;
+}
+/*
+3 - Cas spécifique 
+-texte hero 
+-bouton hero, bouton mission
+-texte chiffre clés
+-timeline 
+-formulaire contact
+*/
+/* Hero */
+/* Texte Hero */
+.hero .textHero h1{
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+} 
+.hero .textHeroAccueil h1{
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.hero .textHeroAccueil p{
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+@media screen and (min-width: 768px) {
+    .hero .textHeroAccueil p{      
+        font-size: 20px;
+        padding-top:0.5%;
+        padding-bottom: 2%;
+    }
+}
+/* Bouton Hero */
+header .btnHero a{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+}
+@media screen and (min-width: 768px) {
+    header .btnHero a{
+        font-size: 20px;      
+    }
+}
+/* Bouton Mission  */
+.btnNavMission a{
+    font-weight: bold;
+    font-size: 14px;   
+}
+@media screen and (min-width: 768px) {
+    .btnNavMission a{
+        font-size: 16px;   
+    }
+}
+/* Texte Chiffre clef */
+.chiffreClef h3{
+    font-size: 26px;
+}
+@media screen and (min-width: 768px) {
+    .chiffreClef h3 {
+        font-size: 30px;  
+    }
+}
+.chiffreClef p{
+    font-size: 14px;
+    color: #778EA3;
+    font-weight: 800;   
+}
+@media screen and (min-width: 768px) {
+    .chiffreClef p {
+        font-size: 16px;
+        
+    }
+}
+/* Timeline */
+.friseChrono .dateTimeline p{
+    font-size: 26px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.89);
+}
+@media screen and (min-width: 768px) {
+    .friseChrono .dateTimeline p{
+        font-size: 32px;    
+    }
+}
+/*Formulaire de contact*/
+
+form label{
+    font-family: 'Roboto', sans-serif;
+}
+   

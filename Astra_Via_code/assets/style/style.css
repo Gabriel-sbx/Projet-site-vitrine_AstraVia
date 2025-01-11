@@ -1,0 +1,440 @@
+/* TABLE DES MATIÈRES
+1. Général (ligne 16-53)
+2. Boutons  (ligne 54-111)
+   2.1 Fiche Mission Bouton 
+   2.2 Hero Accueil 
+3. Header (ligne 112-252)
+   3.1 Background Viewport
+   3.2 Logo
+   3.3 Navbar
+4. Hero Section (ligne 253-290)
+5. Chiffres Clés  (ligne 291-326)
+6. Timeline (ligne 327-402)
+7. Fiches Missions (ligne 403-428)
+8. Footer (ligne 429-450)
+*/
+/* 1. Général */
+#design .bouton {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: #5c85ff;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+body {
+  color: #ffffff;
+  background-color: #050f18;
+  margin: 0 ;
+  padding: 0;
+}
+section {
+  margin-bottom: 10rem;
+}
+h1 {
+  font-size: 1rem;
+}
+@media screen and (max-width: 580px) {
+  .paddingPhone {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+/* 2. Boutons */
+/* 2.1 Fiche Mission Bouton */
+.btnNavMissionContainer {
+  text-align: center;
+  /* Centre le contenu à l'intérieur */
+}
+.btnNavMission {
+  display: inline-block;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.btnNavMission:hover {
+  transform: scale(1.1);
+}
+.btnNavMission:active {
+  transform: scale(0.9);
+}
+.btnNavMission a {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: #5c85ff;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.btnNavMission a:hover {
+  background-color: #050f18;
+  color: #ffffff;
+}
+/* 2.2 Hero Accueil Bouton */
+.hero .btnHero {
+  display: inline-block;/* Permet au bouton de ne pas prendre toute la largeur */
+  transition: transform 0.3s ease;
+}
+.hero .btnHero a {
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: #5c85ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero .btnHero a:hover {
+  background-color: #5c85ff80;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+.hero .btnHero:hover {
+  transform: scale(1.1);
+  /* Agrandit le bouton au survol */
+}
+.hero .btnHero:active {
+  transform: scale(0.8);
+  /* Réduit le bouton lors du clic */
+}
+/* 3. Header  */
+/*3.1 Background */
+/*Page Principale*/
+header .landingPage {
+  background-image: url(../image/backgroundaccueil.webp);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 5%;
+}
+/*Page Secondaire*/
+header .landingSec {
+  background-image: url();
+  background-attachment: fixed;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 7rem;
+}
+/* 3.2 Logo */
+.navbar-brand {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+.navbar-brand img {
+  width: 200px;
+}
+/*  Media query */
+@media screen and (max-width: 430px) {
+  header nav .navbar-brand img {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    padding-top: 2rem;
+    padding-left: 3rem;
+  }
+}
+/* 3.3 Navbar  */
+header nav div ul {
+  padding-right: 5%;
+}
+header nav div ul li {
+  padding-right: 5%;
+}
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #ffffff;
+  font-weight: bold;
+}
+.dropdown-menu.show {
+  border: 5px solid #5c85ff;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #5c85ff;
+}
+.dropdown-item.active li {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.dropdown-item:hover {
+  font-weight: bold;
+}
+/* Media query  */
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin-right: 60px ;
+    margin-left: 60px ;
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar-nav {
+    display: flex;
+    padding: 5%;
+    text-align: center;
+  }
+  .navbar-collapse {
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    background-color: #050f18;
+  }
+}
+/* Effet menu de navigation  */
+.nav-item {
+  position: relative;
+}
+.effetNav:before {
+  content: "";
+  position: absolute;
+  font-weight: bold;
+  left: 37%;
+  top: 80%;
+  width: 20%;
+  height: 4px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, #5c85ff 50%, rgba(255, 255, 255, 0) 100%);
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+}
+.effetNav:hover {
+  font-weight: bold;
+}
+.effetNav:hover:before {
+  transform: scaleX(1);
+}
+@media screen and (min-width: 991px) {
+  .effetNav:before {
+    left: -7%;
+    top: 80%;
+    width: 90%;
+    height: 2px;
+  }
+}
+/*Bouton burger */
+.navbar button span img {
+  width: 30%;
+}
+.navbar button span img:hover {
+  transform: scale(1.1);
+}
+.navbar button span img:active {
+  transform: scale(0.9);
+}
+.navbar-toggler {
+  border: none;
+  color: #ffffff00;
+}
+.navbar-toggler:hover {
+  box-shadow: none;
+  border: none;
+}
+/* 4. Hero Section  */
+.hero {
+  margin: 8rem 1rem 0rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 12rem;
+  }
+}
+/* Dégradé  */
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  /* Ajustez la hauteur du dégradé */
+  background: linear-gradient(0deg, #050f18 0%, #050f18 22%, rgba(255, 255, 255, 0) 74%);
+  z-index: 9;
+}
+.chevron-container {
+  position: relative;
+  /* Positionner le conteneur par rapport à son parent */
+  /* Centrer le chevron */
+  z-index: 10;
+  text-align: center;
+  margin-top: 14rem;
+}
+.chevron-container .chevron {
+  width: 50px;
+  display: inline-block;
+  /* Permet au bouton de ne pas prendre toute la largeur */
+}
+.chevron-container .chevron:hover {
+  transform: scale(1.1);
+}
+.chevron-container .chevron:active {
+  transform: scale(0.9);
+}
+/*  5. Chiffres Clés*/
+.chiffreClef {
+  background-image: url(../image/imageChiffre/backgroundchiffreclef.webp);
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+}
+.chiffreClef .container .row {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.chiffreClef .container .row img {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+.chiffreClef .container .row h3 {
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  .chiffreClef .container .row svg {
+    width: 120px;
+    height: 120px;
+  }
+  .chiffreClef .container .row h3 {
+    padding: 5%;
+  }
+  .chiffreClef .container .row p {
+    padding: 0% 8%;
+  }
+}
+/* 6. Timeline (source free frontend)  */
+.friseChrono .friseText {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.friseChrono .timeline img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.timeline-content {
+  background: #ffffff08;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 1.75rem;
+  transition: 0.5s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+}
+.timeline-component {
+  margin: 0px 5px 45px 5px;
+}
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    margin-left: 0%;
+    margin-right: 0%;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-left {
+    margin: 0% 10% 10% 0%;
+  }
+  .timeline-right {
+    margin: 0% 0% 10% 10%;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(45deg, #7f8ea3, #ffffff);
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #ffffff, #5c85ff, #ffffff);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+/* 7. Fiches Missions */
+main {
+  margin-bottom: 5rem;
+}
+.ficheMission {
+  background-color: #ffffff08;
+}
+.ficheMission img {
+  width: 100%;
+  padding-bottom: 7%;
+}
+.presentationMission h2 {
+  text-align: center;
+  padding: 0px 12px;
+}
+.presentationMission {
+  margin: 5% 0%;
+}
+.presentationMission .ficheMission {
+  border: 3px solid #ffffff;
+  padding: 3% 3% 5% 3%;
+  margin: 10% 5% 0% 5%;
+}
+.contentMission {
+  padding: 0% 1%;
+}
+/* 8. Footer  */
+footer .logoFooter {
+  margin-top: 3%;
+}
+footer .logoFooter img {
+  width: 150px;
+}
+@media screen and (min-width: 768px) {
+  footer hr {
+    margin-top: 10rem;
+  }
+  footer .logoFooter {
+    margin-top: 3%;
+  }
+  footer .logoFooter img {
+    width: 200px;
+  }
+}
+.navFooter {
+  margin: 0% 0% 0% 0%;
+  justify-content: center;
+}

@@ -1,0 +1,91 @@
+/*  Tables des matières :
+1 - Background Viewport (ligne 8-9)
+2 - Dégradé (ligne 10-22)
+3 - Contenu (ligne 23-37)
+4 - Gallerie d'Images (ligne 38-69)
+5 - Image 3d (ligne 70-91)
+*/
+/* 1 - Background Viewport  */
+header .landingSec {
+  background-image: url(../../image/imageMission/hubble/backgroundhubble.webp);
+  /* 2 - Dégradé
+    Changement du dégradé pour cette page ( contraste trop fort) */
+}
+header .landingSec .gradient-overlay {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.6) 60%, rgba(5, 15, 24, 0.9) 85%, #050f18 100%);
+}
+/*3 - Contenu*/
+section .container .row .visuelle img {
+  width: 100%;
+}
+section .container .row .contenuGauche {
+  padding-right: 5%;
+}
+section .container .row .contenuDroite {
+  padding-left: 5%;
+}
+@media screen and (max-width: 767px) {
+  .contenuDroite {
+    padding-top: 6%;
+  }
+}
+/*  4 - Gallerie */
+.image-container img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.435);
+  /* Ombre */
+  border: 1px solid white;
+}
+.image-container img:hover {
+  transform: scale(1.01);
+  border: 1px solid #5c85ff;
+  transition: 0.1s;
+}
+/* Espace entre les images */
+.spacing-bottom {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1000px) {
+  .img-space {
+    height: 509px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .img-space {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .img-space1 {
+    margin-top: 25px ;
+  }
+}
+/* 5 - Image 3d */
+.vue3d {
+  text-align: center;
+}
+.vue3d .texteVue3d {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 5px;
+  color: #ffffffe5;
+}
+.vue3d a {
+  font-weight: bold;
+  color: #5c85ff;
+  text-decoration: none;
+}
+.vue3d .container3d iframe {
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.435);
+  /* Ombre */
+  border: 1px solid white;
+  width: 100%;
+  height: 40rem;
+}

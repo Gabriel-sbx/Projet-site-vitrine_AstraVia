@@ -1,0 +1,9 @@
+/*Background viewport*/
+header .landingSec {
+  background-image: url(../../image/imageMission/backgroundmission.webp);
+}
+@media screen and (max-width: 700px) {
+  header .landingSec {
+    background-position: 30% 70%;
+  }
+}
